@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Globy</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Premium Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1 class="main-title">Globy</h1>
+  <p class="sub-title">Instant country, domain & code lookup</p>
+</div>
+
+<div class="container">
+
+  <!-- DOMAIN -->
+  <div class="card" data-label="DOMAIN LOOKUP">
+    <h2>🌐 Domain ↔ Country</h2>
+    <input id="domainInput" placeholder="Type in or india..." oninput="domainSuggest()">
+    <div id="domainOutput" class="output"></div>
+  </div>
+
+  <!-- PHONE -->
+  <div class="card" data-label="PHONE LOOKUP">
+    <h2>📞 Code ↔ Country</h2>
+    <input id="phoneInput" placeholder="Type 91 or india..." oninput="phoneSuggest()">
+    <div id="phoneOutput" class="output"></div>
+  </div>
+
+</div>
+
+<script src="countries.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
